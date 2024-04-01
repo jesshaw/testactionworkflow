@@ -5,8 +5,8 @@ on:
     branches:
       - 'main'
       - 'releases/**'
-    paths:
-      - 'Dockerfile'
+    # paths:
+    #   - 'Dockerfile'
 jobs:
   Explore-GitHub-Actions:
     if: ${{ github.event_name == 'push' }}
@@ -24,9 +24,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."  
   Docker-build:
-    if: ${{ github.event_name == 'push' && contains(github.event.head_commit.modified, 'Dockerfile') }}
+    if: ${{ github.event_name == 'push'}}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "💡 ${{github.event.head_commit.modified}}."
+      - name: List Modified Files
+        run: echo "${{ github.event.head_commit.modified }}"
