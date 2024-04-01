@@ -1,12 +1,12 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  push:
-    - 'main'
-    - 'releases/**'
-  paths:
-    - 'Dockerfile'
-
+  push:    
+    branches:
+      - 'main'
+      - 'releases/**'
+    paths:
+      - 'Dockerfile'
 jobs:
   Explore-GitHub-Actions:
     if: ${{ github.event_name == 'push' }}
