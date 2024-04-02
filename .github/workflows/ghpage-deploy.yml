@@ -12,15 +12,17 @@ jobs:
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.github_token }}    
-      volumes:
-        - ${{ github.workspace }}:/docs
+      # volumes:
+      #   - ${{ github.workspace }}:/docs
     #   env:
     #     NODE_ENV: development
     #   ports:
     #     - 80
     #   options: --cpus 1
     steps:
+      - name: Print OS Version
+        run: uname -a
       - name: Print Current Directory
         run: pwd      
-      - name: Print Current Directory
-        run: ls -al /docs/mkdocs.yml
+      - name: List Files
+        run: ls -al /docs
