@@ -25,9 +25,14 @@ jobs:
       - name: Print Current Directory
         run: pwd            
       - name: List Files
-        run: ls -al               
-      - name: mkdocs gh-deploy
-        run: mkdocs gh-deploy
+        run: ls -al
+      - name: Deploy documentation
+        env:
+          GH_TOKEN: ${{ secrets.github_token }}
+          # GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        run: |
+          mkdocs gh-deploy --force
+          mkdocs --version
       # - name: List Files
       #   run: ls -al /docs              
       # - name: mkdocs
