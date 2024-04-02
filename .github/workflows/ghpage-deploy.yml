@@ -26,9 +26,9 @@ jobs:
         run: pwd            
       - name: List Files
         run: ls -al               
-      - name: mkdocs
-        run: mkdocs
-      - name: List Files
-        run: ls -al /docs              
-      - name: mkdocs
-        run: mkdocs
+      - name: mkdocs gh-deploy
+        run: mkdocs gh-deploy
+      # - name: List Files
+      #   run: ls -al /docs              
+      # - name: mkdocs
+      #   run: mkdocs
