@@ -6,6 +6,8 @@ on:
       - 'main'
 env:
   GH_TOKEN: ${{ secrets.github_token }}
+permissions:
+  contents: write
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
