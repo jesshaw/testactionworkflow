@@ -19,14 +19,16 @@ jobs:
     #   ports:
     #     - 80
     #   options: --cpus 1
-    steps:
-      - name: Print OS Version
-        run: uname -a      
+    steps:  
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Print Current Directory
         run: pwd            
       - name: List Files
-        run: ls -al
+        run: ls -al               
+      - name: mkdocs
+        run: mkdocs
       - name: List Files
-        run: ls -al /docs
+        run: ls -al /docs              
+      - name: mkdocs
+        run: mkdocs
