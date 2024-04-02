@@ -2,7 +2,7 @@ name: Docker Deploy Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:    
-    branches:
+    tags:
       - 'v**'
 env:
   REGISTRY: ghcr.io
