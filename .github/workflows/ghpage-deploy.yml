@@ -23,6 +23,8 @@ jobs:
       - name: Print OS Version
         run: uname -a
       - name: Print Current Directory
-        run: pwd      
+        run: pwd            
+      - name: List Files
+        run: ls -al
       - name: List Files
         run: ls -al /docs
