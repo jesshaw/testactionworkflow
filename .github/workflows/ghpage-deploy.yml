@@ -21,4 +21,6 @@ jobs:
     #   options: --cpus 1
     steps:
       - name: Print Current Directory
-        run: ls -al /docs/docs
+        run: pwd      
+      - name: Print Current Directory
+        run: ls -al /docs/mkdocs.yml
