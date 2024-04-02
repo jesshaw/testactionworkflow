@@ -3,10 +3,9 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:    
     branches:
-      - 'main'
       - 'releases/**'
-    paths:
-      - 'Dockerfile'
+    # paths:
+    #   - 'Dockerfile'
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
