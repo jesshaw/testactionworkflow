@@ -21,7 +21,9 @@ jobs:
     #   options: --cpus 1
     steps:
       - name: Print OS Version
-        run: uname -a
+        run: uname -a      
+      - name: Check out repository code
+        uses: actions/checkout@v4
       - name: Print Current Directory
         run: pwd            
       - name: List Files
