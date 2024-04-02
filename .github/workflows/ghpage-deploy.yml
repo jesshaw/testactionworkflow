@@ -13,7 +13,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.github_token }}    
       volumes:
-        - ${PWD}:/docs
+        - ${{ github.workspace }}:/docs
     #   env:
     #     NODE_ENV: development
     #   ports:
