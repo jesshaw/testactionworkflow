@@ -27,8 +27,8 @@ jobs:
       - name: List Files
         run: ls -al
       - name: Deploy documentation
-        env:
-          GH_TOKEN: ${{ secrets.github_token }}
+        # env:
+        #   GH_TOKEN: ${{ secrets.github_token }}
           # GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
           mkdocs gh-deploy --force
