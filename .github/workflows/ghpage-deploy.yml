@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdocs gh-deploy --force
           mkdocs --version
-      # - name: List Files
-      #   run: ls -al /docs              
+      - name: List Files
+        run: ls -al /docs              
       # - name: mkdocs
       #   run: mkdocs
