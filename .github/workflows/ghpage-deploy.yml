@@ -1,4 +1,4 @@
-name: gh-pages deploy
+name: Gh-pages Deploy
 run-name: ${{ github.actor }} is deploying to github 🚀
 on:
   push:    
@@ -20,9 +20,5 @@ jobs:
     #     - 80
     #   options: --cpus 1
     steps:
-      - name: Print OS Version
-        run: uname -a
       - name: Print Current Directory
-        run: pwd
-      - name: List Files
-        run: ls -al
+        run: ls -al /docs
