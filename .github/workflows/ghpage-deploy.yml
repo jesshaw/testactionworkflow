@@ -1,0 +1,28 @@
+name: gh-pages deploy
+run-name: ${{ github.actor }} is deploying to github 🚀
+on:
+  push:    
+    branches:
+      - 'main'
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jesshaw/testactionworkflow:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.github_token }}    
+      volumes:
+        - ${PWD}:/docs
+    #   env:
+    #     NODE_ENV: development
+    #   ports:
+    #     - 80
+    #   options: --cpus 1
+    steps:
+      - name: Print OS Version
+        run: uname -a
+      - name: Print Current Directory
+        run: pwd
+      - name: List Files
+        run: ls -al
