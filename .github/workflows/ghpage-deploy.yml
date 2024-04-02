@@ -21,4 +21,4 @@ jobs:
     #   options: --cpus 1
     steps:
       - name: Print Current Directory
-        run: ls -al /docs
+        run: ls -al /docs/docs
