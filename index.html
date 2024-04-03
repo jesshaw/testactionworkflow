@@ -1,0 +1,389 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-mkdocs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Welcome to MkDocs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project layout
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project layout
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
+<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs help</code> - Print this help message.</li>
+</ul>
+<h2 id="project-layout">Project layout</h2>
+<p><img src="data:image/png;base64,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" class="uml" alt="uml diagram" title="" /></p>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
