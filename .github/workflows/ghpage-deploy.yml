@@ -29,8 +29,8 @@ jobs:
       - name: permission
         run: git config --global --add safe.directory /__w/testactionworkflow/testactionworkflow
       - name: Deploy documentation
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.github_token }}
         run: mkdocs gh-deploy --force
       # - name: List Files
       #   run: ls -al /docs              
