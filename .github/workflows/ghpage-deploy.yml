@@ -25,7 +25,9 @@ jobs:
       - name: Print Current Directory
         run: pwd            
       - name: List Files
-        run: ls -al
+        run: ls -al      
+      - name: permission
+        run: git config --global --add safe.directory /__w/testactionworkflow/testactionworkflow
       - name: Deploy documentation
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
