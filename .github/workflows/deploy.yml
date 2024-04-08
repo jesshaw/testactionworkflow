@@ -18,5 +18,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."        
       - run: echo "🍏github.ref ${{ github.ref }}."          
-      - run: echo "🍏github.ref ${{ github.ref_name }}."           
-      - run: echo "🍏github.ref ${{ github.action_ref }}."  
+      - run: echo "🍏github.ref_name ${{ github.ref_name }}."           
+      - run: echo "🍏github.action_ref ${{ github.action_ref }}."  
