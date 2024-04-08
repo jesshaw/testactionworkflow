@@ -5,3 +5,5 @@ markdown_extensions:
   - plantuml_markdown
   # - abbr
   # - attr_list
+plugins:
+    - with-pdf

@@ -24,12 +24,14 @@ RUN apt-get update && \
     curl -L ${PLATNUML_URL} > /opt/plantuml.jar && \
     git clone --branch ${MKDOCS_MATERIAL_BRANCH_VERSION} https://github.com/squidfunk/mkdocs-material.git
 
-# Copy files necessary for build
-COPY bin/plantuml /usr/local/bin/plantuml
-
-RUN chmod +x /usr/local/bin/plantuml && \
+RUN echo '#!/bin/sh' > /usr/local/bin/plantuml && \
+    echo 'java -jar /opt/plantuml.jar ${@}' >> /usr/local/bin/plantuml && \
+    chmod +x /usr/local/bin/plantuml && \
     pip install -e mkdocs-material && \
-    pip install plantuml-markdown
+    pip install plantuml-markdown && \
+    pip install mkdocs-with-pdf && \
+    pip install mkdocs-awesome-pages-plugin mkdocs-codeinclude-plugin && \
+    pip install mike
 
 # Set working directory
 WORKDIR /docs
